@@ -8,8 +8,10 @@ struct aluno {
   int indice;
 };
 
+
 int maiorIndice(struct aluno *a, int tam);
 void lerDados(struct aluno *a, int tam);
+
 
 void lerDados(struct aluno *a, int tam) {
   int i, j;
