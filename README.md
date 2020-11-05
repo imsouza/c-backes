@@ -38,10 +38,10 @@ Minhas soluções dos exercícios propostos pelo Prof. André Backes no livro "L
 
 gcc <filename.c> -o exec
 
-## Author
+## Autor
 
 Mateus Almeida
 
-## License
+## Licença
 
 This project is licensed under the [MIT](https://github.com/imsouza/c-backes/blob/main/LICENSE) License.
