@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // S e count como parâmetros auxiliares, simulando os parâmetros opcionais
-int somatorio(int N, int S, int count) {
+int somatorio (int N, int S, int count) {
   if (count > N) {
     return S;
   } else {

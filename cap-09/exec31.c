@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char maiuscula(char *string) {
+char maiuscula (char *string) {
   int i;
 
   for (i = 0; string[i] != '\0'; i++) {

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float nCubos(int N) {
+float nCubos (int N) {
   if (N == 0) {
     return 0;
   } else {

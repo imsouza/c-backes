@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-void exibeRaizes(int flag, double *x1, double *x2);
+void exibeRaizes (int flag, double *x1, double *x2);
 
-int baskara(int *a, int *b, int *c, double *x1, double *x2) {
+int baskara (int *a, int *b, int *c, double *x1, double *x2) {
   if (*a != 0) {
     double delta = pow(*b, 2) - 4 * (*a) * (*c);
     if (delta == 0) {
@@ -22,7 +22,7 @@ int baskara(int *a, int *b, int *c, double *x1, double *x2) {
 }
 
 
-void exibeRaizes(int flag, double *x1, double *x2) {
+void exibeRaizes (int flag, double *x1, double *x2) {
   if (flag == 1) {
     printf("S = {%0.2lf;%0.2lf}\n", *x1, *x2);
   } else {

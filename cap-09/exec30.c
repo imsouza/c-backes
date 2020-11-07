@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int ehPalindromo(char *string) {
+int ehPalindromo (char *string) {
   int i, j, len = 0, count = 0;
 
   len = strlen(string) - 1;

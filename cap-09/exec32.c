@@ -2,7 +2,7 @@
 
 #define N 4
 
-void somaParesImpares(int *vetor, int *pares, int *impares) {
+void somaParesImpares (int *vetor, int *pares, int *impares) {
   int i;
 
   *pares   = 0;

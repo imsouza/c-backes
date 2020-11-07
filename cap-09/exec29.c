@@ -9,11 +9,11 @@ struct aluno {
 };
 
 
-int maiorIndice(struct aluno *a, int tam);
-void lerDados(struct aluno *a, int tam);
+int maiorIndice (struct aluno *a, int tam);
+void lerDados (struct aluno *a, int tam);
 
 
-void lerDados(struct aluno *a, int tam) {
+void lerDados (struct aluno *a, int tam) {
   int i, j;
   float soma = 0;
 
@@ -46,7 +46,7 @@ void lerDados(struct aluno *a, int tam) {
 }
 
 
-int maiorIndice(struct aluno *a, int tam) {
+int maiorIndice (struct aluno *a, int tam) {
   int i, j;
   int maiorIndice = a[0].indice;
 

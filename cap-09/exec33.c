@@ -2,9 +2,9 @@
 
 #define N 4
 
-void exibeVetorOrdenado(int *vetor);
+void exibeVetorOrdenado (int *vetor);
 
-void ordenarVetor(int *vetor) {
+void ordenarVetor (int *vetor) {
   int tmp = 0;
   int i, swap;
 
@@ -26,7 +26,7 @@ void ordenarVetor(int *vetor) {
 }
 
 
-void exibeVetorOrdenado(int *vetor) {
+void exibeVetorOrdenado (int *vetor) {
   int i;
 
   printf("[ ");

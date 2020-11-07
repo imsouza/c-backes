@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int numerosNaturais(int N, int count) {
+int numerosNaturais (int N, int count) {
   // Caso base
   if (count > N) {
     return count;

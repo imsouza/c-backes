@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int numerosNaturaisDecrescente(int N, int count) {
+int numerosNaturaisDecrescente (int N, int count) {
   // Caso recursivo, decrementando N
   if (N >= count) {
     printf("%i ", N);

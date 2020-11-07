@@ -2,7 +2,7 @@
 
 #define N 7
 
-void maiorMenor(int *vetor, int *maior, int *menor) {
+void maiorMenor (int *vetor, int *maior, int *menor) {
   int i;
 
   *maior = vetor[0];
