@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct cadastro {
+typedef struct {
   char nome[20];
   int idade;
   char endereco[100];
-};
+} cadastro;
 
 
-void mostrarDados (struct cadastro *pessoa, int N) {
+void mostrarDados (cadastro *pessoa, int N) {
   int i;
 
   printf("\n\n\t========================================\n");
@@ -27,7 +27,7 @@ void mostrarDados (struct cadastro *pessoa, int N) {
 }
 
 
-int lerDados (struct cadastro *pessoa, int N) {
+int lerDados (cadastro *pessoa, int N) {
   int i;
 
   printf("\n\n\t\t Cadastrar pessoas:\n\n");
@@ -55,7 +55,7 @@ int lerDados (struct cadastro *pessoa, int N) {
 
 
 int alocarDados (unsigned int N) {
-  struct cadastro *pessoa;
+  cadastro *pessoa;
 
   pessoa = (void *) malloc (N*sizeof(pessoa));
 
@@ -64,7 +64,6 @@ int alocarDados (unsigned int N) {
     system("pause");
     exit(0);
   }
-
 
   lerDados(pessoa, N);
 
