@@ -1,18 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-int *alocarVetor (int N) {
-  int *p, i;
+int *preencherVetor (int N, int valor) {
+  int i;
+
   if (N >= 1) {
-    p = (int *) malloc (N*sizeof(int));
+    int *V = (int *) malloc (N * sizeof(int));
 
-    if (p == NULL) {
+    if (V == NULL) {
       printf("Erro! Memória insuficiente.\n");
       system("pause");
       exit(0);
     }
 
-    return p;
+    for (i = 0; i < N; i++) {
+      V[i] = valor;
+    }
+
+    return V;
   } else {
     return NULL;
   }
@@ -20,11 +26,11 @@ int *alocarVetor (int N) {
 
 
 int main () {
-  int N, i;
+  int N, valor, i;
 
-  scanf("%i", &N);
+  scanf("%i %i", &N, &valor);
 
-  int *resultado = alocarVetor(N);
+  int *resultado = preencherVetor(N, valor);
 
   if (resultado != NULL) {
     for (i = 0; i < N; i++) {
