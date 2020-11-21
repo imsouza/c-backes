@@ -8,7 +8,6 @@ int *alocarVetor (int N) {
 
     if (p == NULL) {
       printf("Erro! Memória insuficiente.\n");
-      system("pause");
       exit(0);
     }
 
@@ -16,6 +15,8 @@ int *alocarVetor (int N) {
   } else {
     return NULL;
   }
+
+  return 0;
 }
 
 

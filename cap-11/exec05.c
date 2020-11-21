@@ -14,7 +14,6 @@ int main () {
 
   if (V == NULL) {
     printf("Erro! Memória insuficiente.\n");
-    system("pause");
     exit(0);
   }
 

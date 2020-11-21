@@ -11,6 +11,11 @@ int main () {
   // Aloca linhas
   p = (int **) malloc (nLinhas * sizeof(int *));
 
+  if (p == NULL) {
+    printf("Erro! Memória insuficiente.\n");
+    exit(0);
+  }
+
   for (i = 0; i < nLinhas; i++) {
     // Aloca colunas
     p[i] = (int *) malloc (nColunas * sizeof(int));
@@ -36,6 +41,8 @@ int main () {
   // Libera a memória das linhas
   free(p);
   p = NULL;
+
+  putchar('\n');
 
   return 0;
 }

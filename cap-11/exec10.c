@@ -9,7 +9,6 @@ int *preencherVetor (int N, int valor) {
 
     if (V == NULL) {
       printf("Erro! Memória insuficiente.\n");
-      system("pause");
       exit(0);
     }
 
@@ -21,6 +20,8 @@ int *preencherVetor (int N, int valor) {
   } else {
     return NULL;
   }
+
+  return 0;
 }
 
 

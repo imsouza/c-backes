@@ -8,7 +8,6 @@ char *inverteString (char *string) {
 
   if (novaString == NULL) {
     printf("Erro! Memória insuficiente.\n");
-    system("pause");
     exit(0);
   }
 

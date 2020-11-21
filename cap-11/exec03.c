@@ -61,7 +61,6 @@ int alocarDados (unsigned int N) {
 
   if (pessoa == NULL) {
     printf("Erro! Memória insuficiente.\n");
-    system("pause");
     exit(0);
   }
 
