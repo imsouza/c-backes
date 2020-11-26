@@ -2,11 +2,27 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+void lerNomesArquivos (char *arquivoEntrada, char *arquivoSaida) {
+  printf("Informe o nome do arquivo de entrada: ");
+  setbuf(stdin, NULL);
+  scanf("%s", arquivoEntrada);
+
+  printf("Informe o nome do arquivo de saída: ");
+  setbuf(stdin, NULL);
+  scanf("%s", arquivoSaida);
+}
+
+
 int main () {
   FILE *arq1, *arq2;
 
-  arq1 = fopen("file.txt", "r");
-  arq2 = fopen("file2.txt", "w");
+  char arquivoEntrada[20];
+  char arquivoSaida[20];
+
+  lerNomesArquivos(arquivoEntrada, arquivoSaida);
+
+  arq1 = fopen(arquivoEntrada, "r");
+  arq2 = fopen(arquivoSaida, "w");
 
   if (arq1 == NULL || arq2 == NULL) {
     perror("Erro");

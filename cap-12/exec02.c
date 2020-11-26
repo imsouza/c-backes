@@ -4,12 +4,28 @@
 // Definição de tamanho dos arquivos
 #define TAM 10
 
+void lerNomesArquivos (char *arquivoEntrada1, char *arquivoEntrada2) {
+  printf("Informe o nome do arquivo de entrada 1: ");
+  setbuf(stdin, NULL);
+  scanf("%s", arquivoEntrada1);
+
+  printf("Informe o nome do arquivo de entrada 2: ");
+  setbuf(stdin, NULL);
+  scanf("%s", arquivoEntrada2);
+}
+
+
 int main () {
   FILE *arq1, *arq2, *arq3;
 
-  arq1 = fopen("file.txt", "r");
-  arq2 = fopen("file2.txt", "r");
-  arq3 = fopen("file3.txt", "w");
+  char arquivoEntrada1[20];
+  char arquivoEntrada2[20];
+
+  lerNomesArquivos(arquivoEntrada1, arquivoEntrada2);
+
+  arq1 = fopen(arquivoEntrada1, "r");
+  arq2 = fopen(arquivoEntrada2, "r");
+  arq3 = fopen("saida.txt", "w");
 
   if (arq1 == NULL || arq2 == NULL || arq3 == NULL) {
     perror("Erro");

@@ -1,10 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void lerNomeArquivo (char *arquivoEntrada) {
+  printf("Informe o nome do arquivo de entrada: ");
+  setbuf(stdin, NULL);
+  scanf("%s", arquivoEntrada);
+}
+
+
 int main () {
   FILE *arq;
 
-  arq = fopen("file.txt", "r");
+  char arquivoEntrada[20];
+  lerNomeArquivo(arquivoEntrada);
+
+  arq = fopen(arquivoEntrada, "r");
 
   if (arq == NULL) {
     perror("Erro");
