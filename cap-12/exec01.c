@@ -15,6 +15,7 @@ int main () {
 
   int linhas = 0;
 
+  // Lê cada caractere até chegar ao final do arquivo EOF
   while (fread(&c, sizeof(char), 1, arq)) {
     if (c == '\n') {
       linhas++;
