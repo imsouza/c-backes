@@ -28,12 +28,6 @@ Minhas soluções dos exercícios propostos pelo Prof. André Backes no livro "L
 
 [Cap. 12 - Arquivos](https://github.com/imsouza/c-backes/tree/main/cap-12)
 
-[Cap. 13 - Avançado](https://github.com/imsouza/c-backes/tree/main/cap-13)
-
-[Cap. 14 - O padrão C99](https://github.com/imsouza/c-backes/tree/main/cap-14)
-
-[Cap. 15 - O padrão C11](https://github.com/imsouza/c-backes/tree/main/cap-15)
-
 ## Compilar
 
 gcc <filename.c> -o exec
