@@ -4,7 +4,7 @@
 int main () {
   char string1[100];
   char string2[100];
-  int i, j, count = 0, x = 0;
+  int count = 0, x = 0;
 
   gets(string1);
   setbuf(stdin, NULL);
