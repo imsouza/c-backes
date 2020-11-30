@@ -51,7 +51,7 @@ void gravarProdutos (lista *produtos, int qtde) {
   arq = fopen("produtos.txt", "w");
 
   if (arq == NULL) {
-   perror("[!] Erro");
+    perror("[!] Erro");
     exit(1);
   }
 
