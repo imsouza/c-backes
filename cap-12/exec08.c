@@ -80,6 +80,7 @@ int main () {
   }
 
   fclose(arq);
+  fclose(arq2);
   
   return 0;
 }
