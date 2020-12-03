@@ -3,7 +3,7 @@
 #include <time.h>
 
 typedef struct {
-  char nome[20];
+  char nome[30];
   int DD;
   int MM;
   int YY;

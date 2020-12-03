@@ -190,8 +190,9 @@ void reiniciarPrograma () {
 }
 
 
-void iniciarPrograma (lista *produtos, int qtde) {
+void iniciarPrograma () {
   char resp;
+  int qtde;
 
   while (1) {
     printf("[*] Deseja gravar uma nova lista de compras? [S/N] ");
@@ -201,9 +202,11 @@ void iniciarPrograma (lista *produtos, int qtde) {
 
     if (resp == 'S' || resp == 's') {
       qtde = lerQtdeProdutos();
+      lista produtos[qtde];
       adicionarProdutos(produtos, qtde);
     } else if (resp == 'N' || resp == 'n') {
       qtde = verificarQtdeLinhas();
+      lista produtos[qtde];
       lerProdutos(produtos, qtde);
     } else {
       printf("[!] Erro! Digite uma entrada correta [S/N].\n");
@@ -214,12 +217,9 @@ void iniciarPrograma (lista *produtos, int qtde) {
 
 
 int main () {
-  system("clear");
+  system("clear"); 
 
-  int qtde = 0;
-  lista produtos[qtde];
-
-  iniciarPrograma(produtos, qtde);
+  iniciarPrograma();
 
   return 0;
 }
