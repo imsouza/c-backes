@@ -12,7 +12,7 @@ int main () {
   printf("%i * 2 = %i\n", a/2, *b);
 
   // Triplo
-  // ***c -> &b => **b -> &a = x
+  // **c -> &b => **b -> &a = x
   c = &b;
   (**c) /= 2;
   (**c) *= 3;
