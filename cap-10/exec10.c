@@ -6,20 +6,20 @@ int main () {
   scanf("%i", &a);
 
   // Dobro
-  // **b -> &a = x
+  // *b -> &a = x
   b = &a;
   (*b) *= 2;
   printf("%i * 2 = %i\n", a/2, *b);
 
   // Triplo
-  // **c -> &b => **b -> &a = x
+  // **c -> &b => *b -> &a = x
   c = &b;
   (**c) /= 2;
   (**c) *= 3;
   printf("%i * 3 = %i\n", a/3, **c);
 
   // Quádruplo
-  // ***d -> &c => **c -> &b => **b -> &a = x
+  // ***d -> &c => **c -> &b => *b -> &a = x
   d = &c;
   (***d) /= 3;
   (***d) *= 4;
